@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "yodaspath:block/deepslate_kyber_ore"
+  }
+}

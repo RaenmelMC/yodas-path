@@ -1,0 +1,8 @@
+{
+  "parent": "yodaspath:item/light_saber_emissive_base",
+
+  "textures": {
+    "emissive": "yodaspath:item/light_saber/emissive/gray_light_saber_emissive",
+    "particle": "yodaspath:item/light_saber/emissive/gray_light_saber_emissive"
+  }
+}

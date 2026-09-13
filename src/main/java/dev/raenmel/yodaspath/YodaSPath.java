@@ -1,30 +1,37 @@
 package dev.raenmel.yodaspath;
 
+import dev.raenmel.yodaspath.block.ModBlocks;
+import dev.raenmel.yodaspath.command.ModCommands;
+import dev.raenmel.yodaspath.component.ModDataComponents;
+import dev.raenmel.yodaspath.event.ModPlayerEvents;
+import dev.raenmel.yodaspath.item.ModItemGroups;
+import dev.raenmel.yodaspath.item.ModItems;
+import dev.raenmel.yodaspath.network.ModNetworking;
+import dev.raenmel.yodaspath.sound.ModSounds;
+import dev.raenmel.yodaspath.world.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
-
-import net.minecraft.util.Identifier;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class YodaSPath implements ModInitializer {
-	public static final String MOD_ID = "yodas-path";
 
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
-	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+	public static final String MOD_ID = "yodaspath";
+
+	public static final Logger LOGGER =
+			LoggerFactory.getLogger(MOD_ID);
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+		LOGGER.info("Initializing Yoda's Path");
 
-		LOGGER.info("Hello Fabric world!");
-	}
-
-	public static Identifier id(String path) {
-		return Identifier.of(MOD_ID, path);
+		ModItems.initialize();
+		ModDataComponents.initialize();
+		ModCommands.initialize();
+		ModSounds.initialize();
+		ModPlayerEvents.initialize();
+		ModNetworking.initialize();
+		ModBlocks.initialize();
+		ModWorldGeneration.initialize();
+		ModItemGroups.initialize();
 	}
 }

@@ -1,0 +1,31 @@
+{
+  "light_saber_on": {
+    "sounds": [
+      {
+        "name": "yodaspath:light_saber_on",
+        "stream": false
+      }
+    ]
+  },
+  "light_saber_off": {
+    "sounds": [
+      {
+        "name": "yodaspath:light_saber_off",
+        "stream": false
+      }
+    ]
+  },
+  "light_saber_hit": {
+    "sounds": [
+      {
+        "name": "yodaspath:light_saber_hit",
+        "stream": false
+      }
+    ]
+  },
+  "light_saber_deflect": {
+    "sounds": [
+      "yodaspath:light_saber_deflect"
+    ]
+  }
+}

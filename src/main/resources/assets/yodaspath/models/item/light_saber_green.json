@@ -1,0 +1,7 @@
+{
+  "parent": "yodaspath:item/light_saber_base",
+  "textures": {
+    "saber": "yodaspath:item/light_saber/green_light_saber",
+    "particle": "yodaspath:item/light_saber/green_light_saber"
+  }
+}

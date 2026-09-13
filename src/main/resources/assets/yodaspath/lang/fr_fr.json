@@ -1,0 +1,28 @@
+{
+  "item.yodaspath.kyber_crystal": "Cristal Kyber",
+
+  "item.yodaspath.light_saber": "Sabre laser",
+
+  "item.yodaspath.white_kyber_crystal": "Cristal Kyber blanc",
+  "item.yodaspath.orange_kyber_crystal": "Cristal Kyber orange",
+  "item.yodaspath.magenta_kyber_crystal": "Cristal Kyber magenta",
+  "item.yodaspath.light_blue_kyber_crystal": "Cristal Kyber bleu clair",
+  "item.yodaspath.yellow_kyber_crystal": "Cristal Kyber jaune",
+  "item.yodaspath.lime_kyber_crystal": "Cristal Kyber vert clair",
+  "item.yodaspath.pink_kyber_crystal": "Cristal Kyber rose",
+  "item.yodaspath.gray_kyber_crystal": "Cristal Kyber gris",
+  "item.yodaspath.light_gray_kyber_crystal": "Cristal Kyber gris clair",
+  "item.yodaspath.cyan_kyber_crystal": "Cristal Kyber cyan",
+  "item.yodaspath.purple_kyber_crystal": "Cristal Kyber violet",
+  "item.yodaspath.blue_kyber_crystal": "Cristal Kyber bleu",
+  "item.yodaspath.brown_kyber_crystal": "Cristal Kyber marron",
+  "item.yodaspath.green_kyber_crystal": "Cristal Kyber vert",
+  "item.yodaspath.red_kyber_crystal": "Cristal Kyber rouge",
+  "item.yodaspath.black_kyber_crystal": "Cristal Kyber noir",
+
+  "block.yodaspath.kyber_ore": "Minerai de Kyber",
+  "block.yodaspath.deepslate_kyber_ore": "Minerai de Kyber des abîmes",
+
+  "itemgroup.yodaspath.yodas_path": "Yoda's Path",
+  "itemgroup.yodaspath.ores": "Minerais de Yoda's Path"
+}

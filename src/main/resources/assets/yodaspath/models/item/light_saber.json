@@ -1,0 +1,116 @@
+{
+	"parent": "yodaspath:item/light_saber_handle",
+	"overrides": [
+		{
+			"predicate": {
+				"yodaspath:activated": 1.0
+			},
+			"model": "yodaspath:item/light_saber_white"
+		},
+		{
+			"predicate": {
+				"yodaspath:activated": 1.0,
+				"yodaspath:kyber_color": 0.01
+			},
+			"model": "yodaspath:item/light_saber_orange"
+		},
+		{
+			"predicate": {
+				"yodaspath:activated": 1.0,
+				"yodaspath:kyber_color": 0.02
+			},
+			"model": "yodaspath:item/light_saber_magenta"
+		},
+		{
+			"predicate": {
+				"yodaspath:activated": 1.0,
+				"yodaspath:kyber_color": 0.03
+			},
+			"model": "yodaspath:item/light_saber_light_blue"
+		},
+		{
+			"predicate": {
+				"yodaspath:activated": 1.0,
+				"yodaspath:kyber_color": 0.04
+			},
+			"model": "yodaspath:item/light_saber_yellow"
+		},
+		{
+			"predicate": {
+				"yodaspath:activated": 1.0,
+				"yodaspath:kyber_color": 0.05
+			},
+			"model": "yodaspath:item/light_saber_lime"
+		},
+		{
+			"predicate": {
+				"yodaspath:activated": 1.0,
+				"yodaspath:kyber_color": 0.06
+			},
+			"model": "yodaspath:item/light_saber_pink"
+		},
+		{
+			"predicate": {
+				"yodaspath:activated": 1.0,
+				"yodaspath:kyber_color": 0.07
+			},
+			"model": "yodaspath:item/light_saber_gray"
+		},
+		{
+			"predicate": {
+				"yodaspath:activated": 1.0,
+				"yodaspath:kyber_color": 0.08
+			},
+			"model": "yodaspath:item/light_saber_light_gray"
+		},
+		{
+			"predicate": {
+				"yodaspath:activated": 1.0,
+				"yodaspath:kyber_color": 0.09
+			},
+			"model": "yodaspath:item/light_saber_cyan"
+		},
+		{
+			"predicate": {
+				"yodaspath:activated": 1.0,
+				"yodaspath:kyber_color": 0.10
+			},
+			"model": "yodaspath:item/light_saber_purple"
+		},
+		{
+			"predicate": {
+				"yodaspath:activated": 1.0,
+				"yodaspath:kyber_color": 0.11
+			},
+			"model": "yodaspath:item/light_saber_blue"
+		},
+		{
+			"predicate": {
+				"yodaspath:activated": 1.0,
+				"yodaspath:kyber_color": 0.12
+			},
+			"model": "yodaspath:item/light_saber_brown"
+		},
+		{
+			"predicate": {
+				"yodaspath:activated": 1.0,
+				"yodaspath:kyber_color": 0.13
+			},
+			"model": "yodaspath:item/light_saber_green"
+		},
+		{
+			"predicate": {
+				"yodaspath:activated": 1.0,
+				"yodaspath:kyber_color": 0.14
+			},
+			"model": "yodaspath:item/light_saber_red"
+		},
+		{
+			"predicate": {
+				"yodaspath:activated": 1.0,
+				"yodaspath:kyber_color": 0.15
+			},
+			"model": "yodaspath:item/light_saber_black"
+		}
+	]
+}

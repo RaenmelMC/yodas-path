@@ -3,20 +3,23 @@
 	"id": "yodas-path",
 	"version": "${version}",
 	"name": "Yoda's Path",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A Star Wars adventure mod for Minecraft.",
 	"authors": [
-		"Me!"
+		"Raenmel"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "All-Rights-Reserved",
 	"icon": "assets/yodas-path/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"dev.raenmel.yodaspath.YodaSPath"
+		],
+		"client": [
+			"dev.raenmel.yodaspath.client.YodaSPathClient"
 		]
 	},
 	"mixins": [

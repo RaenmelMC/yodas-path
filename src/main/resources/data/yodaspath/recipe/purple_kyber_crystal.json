@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DDD",
+    "DKD",
+    "DDD"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:purple_dye"
+    },
+    "K": {
+      "item": "yodaspath:kyber_crystal"
+    }
+  },
+  "result": {
+    "id": "yodaspath:purple_kyber_crystal",
+    "count": 1
+  }
+}

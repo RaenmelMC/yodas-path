@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "yodaspath:item/blue_kyber_crystal"
+  }
+}
