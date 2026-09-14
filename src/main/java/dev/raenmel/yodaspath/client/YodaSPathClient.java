@@ -3,6 +3,7 @@ package dev.raenmel.yodaspath.client;
 import dev.raenmel.yodaspath.YodaSPath;
 import dev.raenmel.yodaspath.client.model.EmissiveLightSaberModel;
 import dev.raenmel.yodaspath.component.ModDataComponents;
+import dev.raenmel.yodaspath.entity.ModEntities;
 import dev.raenmel.yodaspath.item.ModItems;
 import dev.raenmel.yodaspath.item.custom.LightSaberItem;
 import dev.raenmel.yodaspath.item.kyber.KyberColor;
@@ -11,9 +12,11 @@ import dev.raenmel.yodaspath.network.DeflectPayload;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.model.loading.v1.ModelLoadingPlugin;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.event.client.player.ClientPreAttackCallback;
 
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
+import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.client.render.model.BakedModel;
 import net.minecraft.client.util.ModelIdentifier;
 import net.minecraft.item.ItemStack;
@@ -26,6 +29,11 @@ public class YodaSPathClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+
+        EntityRendererRegistry.register(
+                ModEntities.BLASTER_BOLT,
+                FlyingItemEntityRenderer::new
+        );
 
         Map<KyberColor, Identifier> emissiveIds =
                 new EnumMap<>(KyberColor.class);
@@ -61,8 +69,8 @@ public class YodaSPathClient implements ClientModInitializer {
                         ModelIdentifier topLevelId =
                                 modelContext.topLevelId();
 
-                        if (topLevelId == null ||
-                                !topLevelId.equals(lightSaberInventory)) {
+                        if (topLevelId == null
+                                || !topLevelId.equals(lightSaberInventory)) {
                             return model;
                         }
 
@@ -129,9 +137,7 @@ public class YodaSPathClient implements ClientModInitializer {
                 (stack, world, entity, seed) -> {
 
                     String colorId =
-                            stack.get(
-                                    ModDataComponents.KYBER_COLOR
-                            );
+                            stack.get(ModDataComponents.KYBER_COLOR);
 
                     if (colorId == null) {
                         return 0.0F;
@@ -172,7 +178,8 @@ public class YodaSPathClient implements ClientModInitializer {
                         return false;
                     }
 
-                    ItemStack stack = player.getMainHandStack();
+                    ItemStack stack =
+                            player.getMainHandStack();
 
                     if (!stack.isOf(ModItems.LIGHT_SABER)) {
                         return false;

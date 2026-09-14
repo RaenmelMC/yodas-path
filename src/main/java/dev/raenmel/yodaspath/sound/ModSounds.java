@@ -20,6 +20,9 @@ public class ModSounds {
     public static final SoundEvent LIGHT_SABER_DEFLECT =
             registerSoundEvent("light_saber_deflect");
 
+    public static final SoundEvent BLASTER_SHOOT =
+            registerSoundEvent("blaster_shoot");
+
     private static SoundEvent registerSoundEvent(String name) {
         Identifier id = Identifier.of(YodaSPath.MOD_ID, name);
 
@@ -29,6 +32,7 @@ public class ModSounds {
                 SoundEvent.of(id)
         );
     }
+
 
     public static void initialize() {
         YodaSPath.LOGGER.info(

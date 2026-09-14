@@ -61,6 +61,9 @@ public class ModItemGroups {
                 .register(entries -> {
                     entries.add(ModItems.LIGHT_SABER);
 
+                    entries.add(ModItems.BLASTER);
+                    entries.add(ModItems.BLASTER_CELL);
+
                     entries.add(ModItems.KYBER_CRYSTAL);
 
                     entries.add(ModItems.WHITE_KYBER_CRYSTAL);

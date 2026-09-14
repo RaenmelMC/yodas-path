@@ -24,5 +24,8 @@
   "block.yodaspath.deepslate_kyber_ore": "Minerai de Kyber des abîmes",
 
   "itemgroup.yodaspath.yodas_path": "Yoda's Path",
-  "itemgroup.yodaspath.ores": "Minerais de Yoda's Path"
+  "itemgroup.yodaspath.ores": "Minerais de Yoda's Path",
+
+  "item.yodaspath.blaster": "Blaster",
+  "item.yodaspath.blaster_cell": "Cellule de blaster"
 }

@@ -24,5 +24,8 @@
   "block.yodaspath.deepslate_kyber_ore": "Deepslate Kyber Ore",
 
   "itemgroup.yodaspath.yodas_path": "Yoda's Path",
-  "itemgroup.yodaspath.ores": "Yoda's Path Ores"
+  "itemgroup.yodaspath.ores": "Yoda's Path Ores",
+
+  "item.yodaspath.blaster": "Blaster",
+  "item.yodaspath.blaster_cell": "Blaster Cell"
 }

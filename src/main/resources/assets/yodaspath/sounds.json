@@ -27,5 +27,10 @@
     "sounds": [
       "yodaspath:light_saber_deflect"
     ]
+  },
+  "blaster_shoot": {
+    "sounds": [
+      "yodaspath:blaster_shoot"
+    ]
   }
 }

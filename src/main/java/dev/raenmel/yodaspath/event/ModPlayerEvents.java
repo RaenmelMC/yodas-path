@@ -1,10 +1,12 @@
 package dev.raenmel.yodaspath.event;
 
+import dev.raenmel.yodaspath.entity.custom.BlasterBoltEntity;
 import dev.raenmel.yodaspath.item.ModItems;
 import dev.raenmel.yodaspath.item.custom.LightSaberItem;
 import dev.raenmel.yodaspath.sound.ModSounds;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
+import net.minecraft.entity.projectile.ProjectileEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -82,19 +84,25 @@ public class ModPlayerEvents {
         Box searchBox = player.getBoundingBox()
                 .expand(DEFLECT_RADIUS);
 
-        List<PersistentProjectileEntity> projectiles =
+        List<ProjectileEntity> projectiles =
                 world.getEntitiesByClass(
-                        PersistentProjectileEntity.class,
+                        ProjectileEntity.class,
                         searchBox,
-                        projectile -> projectile.isAlive()
+                        projectile ->
+                                projectile.isAlive()
+                                        && (
+                                        projectile instanceof PersistentProjectileEntity
+                                                || projectile instanceof BlasterBoltEntity
+                                )
                 );
 
         Vec3d lookDirection =
                 player.getRotationVec(1.0F).normalize();
 
-        for (PersistentProjectileEntity projectile : projectiles) {
+        for (ProjectileEntity projectile : projectiles) {
 
-            Vec3d velocity = projectile.getVelocity();
+            Vec3d velocity =
+                    projectile.getVelocity();
 
             if (velocity.lengthSquared() < 0.001D) {
                 continue;
@@ -108,7 +116,6 @@ public class ModPlayerEvents {
             double facing =
                     lookDirection.dotProduct(toProjectile);
 
-            // Le projectile doit être globalement devant le joueur.
             if (facing < 0.15D) {
                 continue;
             }
@@ -122,27 +129,33 @@ public class ModPlayerEvents {
                             .normalize();
 
             double incoming =
-                    projectileDirection.dotProduct(towardPlayer);
+                    projectileDirection.dotProduct(
+                            towardPlayer
+                    );
 
-            // Le projectile doit réellement venir vers le joueur.
             if (incoming < 0.25D) {
                 continue;
             }
 
-            deflectProjectile(player, projectile);
+            deflectProjectile(
+                    player,
+                    projectile
+            );
         }
     }
 
     private static void deflectProjectile(
             ServerPlayerEntity player,
-            PersistentProjectileEntity projectile
+            ProjectileEntity projectile
     ) {
         ServerWorld world = player.getServerWorld();
 
-        double speed = projectile.getVelocity().length();
+        double speed =
+                projectile.getVelocity().length();
 
         Vec3d newDirection =
-                player.getRotationVec(1.0F).normalize();
+                player.getRotationVec(1.0F)
+                        .normalize();
 
         projectile.setVelocity(
                 newDirection.multiply(
