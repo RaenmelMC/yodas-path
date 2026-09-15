@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "yodaspath:block/tatooine_sandstone"
+  }
+}

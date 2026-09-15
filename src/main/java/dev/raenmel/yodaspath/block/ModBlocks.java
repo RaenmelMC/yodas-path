@@ -96,6 +96,14 @@ public class ModBlocks {
                     )
             );
 
+    public static final Block TATOOINE_SANDSTONE_WALL =
+            registerBlock(
+                    "tatooine_sandstone_wall",
+                    new WallBlock(
+                            AbstractBlock.Settings.copy(Blocks.SANDSTONE_WALL)
+                    )
+            );
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
 

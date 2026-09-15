@@ -120,6 +120,7 @@ public class ModItemGroups {
                     entries.add(ModBlocks.TATOOINE_CHISELED_SANDSTONE);
                     entries.add(ModBlocks.TATOOINE_CHISELED_SANDSTONE_STAIRS);
                     entries.add(ModBlocks.TATOOINE_CHISELED_SLAB);
+                    entries.add(ModBlocks.TATOOINE_SANDSTONE_WALL);
                 });
 
 

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "SSS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "yodaspath:tatooine_sandstone"
+    }
+  },
+  "result": {
+    "id": "yodaspath:tatooine_sandstone_wall",
+    "count": 6
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "yodaspath:tatooine_sandstone"
+  },
+  "result": {
+    "id": "yodaspath:tatooine_sandstone_wall",
+    "count": 1
+  }
+}
