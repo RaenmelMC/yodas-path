@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "yodaspath:tatooine_chiseled_sandstone"
+    }
+  },
+  "result": {
+    "id": "yodaspath:tatooine_chiseled_slab",
+    "count": 6
+  }
+}

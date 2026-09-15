@@ -27,5 +27,15 @@
   "itemgroup.yodaspath.ores": "Yoda's Path Ores",
 
   "item.yodaspath.blaster": "Blaster",
-  "item.yodaspath.blaster_cell": "Blaster Cell"
+  "item.yodaspath.blaster_cell": "Blaster Cell",
+
+  "block.yodaspath.tatooine_sand": "Tatooine Sand",
+  "block.yodaspath.tatooine_sandstone": "Tatooine Sandstone",
+  "block.yodaspath.tatooine_sandstone_stairs": "Tatooine Sandstone Stairs",
+  "block.yodaspath.tatooine_sandstone_slab": "Tatooine Sandstone Slab",
+  "block.yodaspath.tatooine_chiseled_sandstone": "Chiseled Tatooine Sandstone",
+  "block.yodaspath.tatooine_chiseled_sandstone_stairs": "Chiseled Tatooine Sandstone Stairs",
+  "block.yodaspath.tatooine_chiseled_slab": "Chiseled Tatooine Sandstone Slab",
+
+  "itemgroup.yodaspath.blocks": "Yoda's Path Blocks"
 }

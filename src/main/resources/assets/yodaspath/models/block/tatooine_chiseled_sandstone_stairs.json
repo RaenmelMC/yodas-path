@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "yodaspath:block/tatooine_chiseled_sandstone",
+    "top": "yodaspath:block/tatooine_chiseled_sandstone",
+    "side": "yodaspath:block/tatooine_chiseled_sandstone"
+  }
+}

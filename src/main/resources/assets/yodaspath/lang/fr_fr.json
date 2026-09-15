@@ -27,5 +27,15 @@
   "itemgroup.yodaspath.ores": "Minerais de Yoda's Path",
 
   "item.yodaspath.blaster": "Blaster",
-  "item.yodaspath.blaster_cell": "Cellule de blaster"
+  "item.yodaspath.blaster_cell": "Cellule de blaster",
+
+  "block.yodaspath.tatooine_sand": "Sable de Tatooine",
+  "block.yodaspath.tatooine_sandstone": "Grès de Tatooine",
+  "block.yodaspath.tatooine_sandstone_stairs": "Escalier en grès de Tatooine",
+  "block.yodaspath.tatooine_sandstone_slab": "Dalle en grès de Tatooine",
+  "block.yodaspath.tatooine_chiseled_sandstone": "Grès sculpté de Tatooine",
+  "block.yodaspath.tatooine_chiseled_sandstone_stairs": "Escalier en grès sculpté de Tatooine",
+  "block.yodaspath.tatooine_chiseled_slab": "Dalle en grès sculpté de Tatooine",
+
+  "itemgroup.yodaspath.blocks": "Blocs de Yoda's Path"
 }

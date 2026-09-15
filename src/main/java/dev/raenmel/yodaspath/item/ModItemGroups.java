@@ -27,6 +27,12 @@ public class ModItemGroups {
                     Identifier.of(YodaSPath.MOD_ID, "ores")
             );
 
+    public static final RegistryKey<ItemGroup> YODAS_PATH_BLOCKS_GROUP_KEY =
+            RegistryKey.of(
+                    RegistryKeys.ITEM_GROUP,
+                    Identifier.of(YodaSPath.MOD_ID, "blocks")
+            );
+
     public static final ItemGroup YODAS_PATH_GROUP =
             Registry.register(
                     Registries.ITEM_GROUP,
@@ -54,6 +60,21 @@ public class ModItemGroups {
                             )
                             .build()
             );
+
+    public static final ItemGroup YODAS_PATH_BLOCKS_GROUP =
+            Registry.register(
+                    Registries.ITEM_GROUP,
+                    YODAS_PATH_BLOCKS_GROUP_KEY,
+                    FabricItemGroup.builder()
+                            .icon(() -> new ItemStack(ModBlocks.TATOOINE_SAND))
+                            .displayName(
+                                    Text.translatable(
+                                            "itemgroup.yodaspath.blocks"
+                                    )
+                            )
+                            .build()
+            );
+
 
     public static void initialize() {
 
@@ -89,6 +110,18 @@ public class ModItemGroups {
                     entries.add(ModBlocks.KYBER_ORE);
                     entries.add(ModBlocks.DEEPSLATE_KYBER_ORE);
                 });
+
+        ItemGroupEvents.modifyEntriesEvent(YODAS_PATH_BLOCKS_GROUP_KEY)
+                .register(entries -> {
+                    entries.add(ModBlocks.TATOOINE_SAND);
+                    entries.add(ModBlocks.TATOOINE_SANDSTONE);
+                    entries.add(ModBlocks.TATOOINE_SANDSTONE_STAIRS);
+                    entries.add(ModBlocks.TATOOINE_SANDSTONE_SLAB);
+                    entries.add(ModBlocks.TATOOINE_CHISELED_SANDSTONE);
+                    entries.add(ModBlocks.TATOOINE_CHISELED_SANDSTONE_STAIRS);
+                    entries.add(ModBlocks.TATOOINE_CHISELED_SLAB);
+                });
+
 
         YodaSPath.LOGGER.info(
                 "Registering item groups for {}",

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "yodaspath:block/tatooine_chiseled_slab"
+    },
+    "type=top": {
+      "model": "yodaspath:block/tatooine_chiseled_slab_top"
+    },
+    "type=double": {
+      "model": "yodaspath:block/tatooine_chiseled_sandstone"
+    }
+  }
+}
