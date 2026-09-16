@@ -23,6 +23,19 @@ public class ModBlockEntities {
             ).build()
     );
 
+    public static final BlockEntityType<TatooineCrateBlockEntity>
+            TATOOINE_CRATE = Registry.register(
+            Registries.BLOCK_ENTITY_TYPE,
+            Identifier.of(
+                    YodaSPath.MOD_ID,
+                    "tatooine_crate"
+            ),
+            FabricBlockEntityTypeBuilder.create(
+                    TatooineCrateBlockEntity::new,
+                    ModBlocks.TATOOINE_CRATE
+            ).build()
+    );
+
     public static void initialize() {
         YodaSPath.LOGGER.info(
                 "Registering Yoda's Path block entities"

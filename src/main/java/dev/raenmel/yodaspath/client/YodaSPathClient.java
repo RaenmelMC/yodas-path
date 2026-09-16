@@ -9,12 +9,15 @@ import dev.raenmel.yodaspath.item.custom.LightSaberItem;
 import dev.raenmel.yodaspath.item.kyber.KyberColor;
 import dev.raenmel.yodaspath.network.DeflectPayload;
 
+import dev.raenmel.yodaspath.screen.ModScreenHandlers;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.model.loading.v1.ModelLoadingPlugin;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.event.client.player.ClientPreAttackCallback;
 
+import dev.raenmel.yodaspath.client.screen.TatooineCrateScreen;
+import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.client.render.model.BakedModel;
@@ -33,6 +36,11 @@ public class YodaSPathClient implements ClientModInitializer {
         EntityRendererRegistry.register(
                 ModEntities.BLASTER_BOLT,
                 FlyingItemEntityRenderer::new
+        );
+
+        HandledScreens.register(
+                ModScreenHandlers.TATOOINE_CRATE,
+                TatooineCrateScreen::new
         );
 
         Map<KyberColor, Identifier> emissiveIds =
@@ -197,4 +205,5 @@ public class YodaSPathClient implements ClientModInitializer {
                 }
         );
     }
+
 }

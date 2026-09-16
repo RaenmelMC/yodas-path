@@ -10,6 +10,7 @@ import dev.raenmel.yodaspath.event.ModPlayerEvents;
 import dev.raenmel.yodaspath.item.ModItemGroups;
 import dev.raenmel.yodaspath.item.ModItems;
 import dev.raenmel.yodaspath.network.ModNetworking;
+import dev.raenmel.yodaspath.screen.ModScreenHandlers;
 import dev.raenmel.yodaspath.sound.ModSounds;
 import dev.raenmel.yodaspath.world.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
@@ -39,5 +40,6 @@ public class YodaSPath implements ModInitializer {
 		ModEntities.initialize();
 		ModBlockEntities.initialize();
 		ModBlockEvents.initialize();
+		ModScreenHandlers.initialize();
 	}
 }
