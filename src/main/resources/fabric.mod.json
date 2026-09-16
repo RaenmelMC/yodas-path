@@ -8,8 +8,8 @@
 		"Raenmel"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/RaenmelMC/yodas-path",
+		"sources": "https://github.com/RaenmelMC/yodas-path"
 	},
 	"license": "MIT",
 	"icon": "assets/yodas-path/icon.png",
