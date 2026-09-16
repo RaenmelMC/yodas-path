@@ -75,6 +75,15 @@ public class ModItemGroups {
                             .build()
             );
 
+    public static final RegistryKey<ItemGroup> YODAS_PATH_ENTITIES =
+            RegistryKey.of(
+                    RegistryKeys.ITEM_GROUP,
+                    Identifier.of(
+                            YodaSPath.MOD_ID,
+                            "yodas_path_entities"
+                    )
+            );
+
 
     public static void initialize() {
 
@@ -128,6 +137,26 @@ public class ModItemGroups {
                     entries.add(ModBlocks.DRY_TATOOINE_BUSH);
                     entries.add(ModBlocks.SCRAP_PILE);
                 });
+
+        Registry.register(
+                Registries.ITEM_GROUP,
+                YODAS_PATH_ENTITIES,
+                FabricItemGroup.builder()
+                        .icon(() -> new ItemStack(
+                                ModItems.JAWA_SPAWN_EGG
+                        ))
+                        .displayName(
+                                Text.translatable(
+                                        "itemGroup.yodaspath.entities"
+                                )
+                        )
+                        .entries((displayContext, entries) -> {
+                            entries.add(
+                                    ModItems.JAWA_SPAWN_EGG
+                            );
+                        })
+                        .build()
+        );
 
 
         YodaSPath.LOGGER.info(

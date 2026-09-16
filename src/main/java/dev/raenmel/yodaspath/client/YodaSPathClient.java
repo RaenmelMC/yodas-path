@@ -3,22 +3,26 @@ package dev.raenmel.yodaspath.client;
 import dev.raenmel.yodaspath.YodaSPath;
 import dev.raenmel.yodaspath.block.ModBlocks;
 import dev.raenmel.yodaspath.client.model.EmissiveLightSaberModel;
+import dev.raenmel.yodaspath.client.model.JawaModel;
+import dev.raenmel.yodaspath.client.model.ModEntityModelLayers;
+import dev.raenmel.yodaspath.client.renderer.JawaRenderer;
+import dev.raenmel.yodaspath.client.screen.TatooineCrateScreen;
 import dev.raenmel.yodaspath.component.ModDataComponents;
 import dev.raenmel.yodaspath.entity.ModEntities;
 import dev.raenmel.yodaspath.item.ModItems;
 import dev.raenmel.yodaspath.item.custom.LightSaberItem;
 import dev.raenmel.yodaspath.item.kyber.KyberColor;
 import dev.raenmel.yodaspath.network.DeflectPayload;
-
 import dev.raenmel.yodaspath.screen.ModScreenHandlers;
+
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.model.loading.v1.ModelLoadingPlugin;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.event.client.player.ClientPreAttackCallback;
 
-import dev.raenmel.yodaspath.client.screen.TatooineCrateScreen;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.client.render.RenderLayer;
@@ -35,6 +39,16 @@ public class YodaSPathClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+
+        EntityModelLayerRegistry.registerModelLayer(
+                ModEntityModelLayers.JAWA,
+                JawaModel::getTexturedModelData
+        );
+
+        EntityRendererRegistry.register(
+                ModEntities.JAWA,
+                JawaRenderer::new
+        );
 
         EntityRendererRegistry.register(
                 ModEntities.BLASTER_BOLT,
@@ -213,5 +227,4 @@ public class YodaSPathClient implements ClientModInitializer {
                 }
         );
     }
-
 }

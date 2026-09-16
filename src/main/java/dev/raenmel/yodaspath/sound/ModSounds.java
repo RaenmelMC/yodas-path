@@ -23,6 +23,9 @@ public class ModSounds {
     public static final SoundEvent BLASTER_SHOOT =
             registerSoundEvent("blaster_shoot");
 
+    public static final SoundEvent JAWA_AMBIENT =
+            registerSoundEvent("entity.jawa.ambient");
+
     private static SoundEvent registerSoundEvent(String name) {
         Identifier id = Identifier.of(YodaSPath.MOD_ID, name);
 

@@ -32,5 +32,10 @@
     "sounds": [
       "yodaspath:blaster_shoot"
     ]
+  },
+  "entity.jawa.ambient": {
+    "sounds": [
+      "yodaspath:entity/jawa/jawa"
+    ]
   }
 }

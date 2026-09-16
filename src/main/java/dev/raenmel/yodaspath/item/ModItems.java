@@ -2,10 +2,12 @@ package dev.raenmel.yodaspath.item;
 
 import dev.raenmel.yodaspath.YodaSPath;
 import dev.raenmel.yodaspath.component.ModDataComponents;
+import dev.raenmel.yodaspath.entity.ModEntities;
 import dev.raenmel.yodaspath.item.custom.BlasterItem;
 import dev.raenmel.yodaspath.item.custom.LightSaberItem;
 import dev.raenmel.yodaspath.item.kyber.KyberColor;
 import net.minecraft.item.Item;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -69,6 +71,7 @@ public class ModItems {
     public static final Item SCRAP_METAL =
             registerItem("scrap_metal");
 
+
     public static final Item BLASTER_CELL =
             Registry.register(
                     Registries.ITEM,
@@ -114,6 +117,21 @@ public class ModItems {
                     new BlasterItem(
                             new Item.Settings()
                                     .maxCount(1)
+                    )
+            );
+
+    public static final Item JAWA_SPAWN_EGG =
+            Registry.register(
+                    Registries.ITEM,
+                    Identifier.of(
+                            YodaSPath.MOD_ID,
+                            "jawa_spawn_egg"
+                    ),
+                    new SpawnEggItem(
+                            ModEntities.JAWA,
+                            0x6B4423,
+                            0xFFD83D,
+                            new Item.Settings()
                     )
             );
 

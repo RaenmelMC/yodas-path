@@ -25,6 +25,8 @@
 
   "itemgroup.yodaspath.yodas_path": "Yoda's Path",
   "itemgroup.yodaspath.ores": "Minerais de Yoda's Path",
+  "itemGroup.yodaspath.entities": "Entités de Yoda's Path",
+  "itemgroup.yodaspath.blocks": "Blocs de Yoda's Path",
 
   "item.yodaspath.blaster": "Blaster",
   "item.yodaspath.blaster_cell": "Cellule de blaster",
@@ -44,8 +46,8 @@
 
   "block.yodaspath.moisture_vaporator": "Vaporateur d'humidité",
 
-  "itemgroup.yodaspath.blocks": "Blocs de Yoda's Path",
-
   "item.yodaspath.scrap_metal": "Ferraille",
-  "block.yodaspath.scrap_pile": "Pile de Ferraille"
+  "block.yodaspath.scrap_pile": "Pile de Ferraille",
+
+  "item.yodaspath.jawa_spawn_egg": "Œuf d'apparition de Jawa"
 }
