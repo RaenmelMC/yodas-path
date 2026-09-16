@@ -137,6 +137,16 @@ public class ModBlocks {
                     )
             );
 
+    public static final Block SCRAP_PILE =
+            registerBlock(
+                    "scrap_pile",
+                    new Block(
+                            AbstractBlock.Settings.copy(Blocks.IRON_BLOCK)
+                                    .strength(2.0F)
+                                    .requiresTool()
+                    )
+            );
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
 

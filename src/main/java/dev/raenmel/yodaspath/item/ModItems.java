@@ -66,6 +66,9 @@ public class ModItems {
     public static final Item BLASTER_BOLT =
             registerItem("blaster_bolt");
 
+    public static final Item SCRAP_METAL =
+            registerItem("scrap_metal");
+
     public static final Item BLASTER_CELL =
             Registry.register(
                     Registries.ITEM,

@@ -1,21 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "building",
   "pattern": [
-    "SRS",
-    "SRS",
-    "SRS"
+    "SSS",
+    "SSS",
+    "SSS"
   ],
   "key": {
     "S": {
       "item": "yodaspath:scrap_metal"
-    },
-    "R": {
-      "item": "minecraft:redstone"
     }
   },
   "result": {
-    "id": "yodaspath:blaster_cell",
+    "id": "yodaspath:scrap_pile",
     "count": 1
   }
 }

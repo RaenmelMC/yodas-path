@@ -39,6 +39,9 @@
   "block.yodaspath.tatooine_sandstone_wall": "Tatooine Sandstone Wall",
   "block.yodaspath.dry_tatooine_bush": "Dry Tatooine Bush",
 
+  "item.yodaspath.scrap_metal": "Scrap Metal",
+  "block.yodaspath.scrap_pile": "Scrap Pile",
+
   "block.yodaspath.tatooine_crate": "Tatooine Crate",
   "container.yodaspath.tatooine_crate": "Tatooine Crate",
 

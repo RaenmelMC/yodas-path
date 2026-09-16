@@ -44,5 +44,8 @@
 
   "block.yodaspath.moisture_vaporator": "Vaporateur d'humidité",
 
-  "itemgroup.yodaspath.blocks": "Blocs de Yoda's Path"
+  "itemgroup.yodaspath.blocks": "Blocs de Yoda's Path",
+
+  "item.yodaspath.scrap_metal": "Ferraille",
+  "block.yodaspath.scrap_pile": "Pile de Ferraille"
 }

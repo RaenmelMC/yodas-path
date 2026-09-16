@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "ICI",
-    "IXI",
-    "I I"
+    "SCS",
+    "SXS",
+    "S S"
   ],
   "key": {
-    "I": {
-      "item": "minecraft:iron_block"
+    "S": {
+      "item": "yodaspath:scrap_pile"
     },
     "C": {
       "item": "minecraft:cactus"

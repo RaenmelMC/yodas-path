@@ -103,6 +103,8 @@ public class ModItemGroups {
                     entries.add(ModItems.GREEN_KYBER_CRYSTAL);
                     entries.add(ModItems.RED_KYBER_CRYSTAL);
                     entries.add(ModItems.BLACK_KYBER_CRYSTAL);
+
+                    entries.add(ModItems.SCRAP_METAL);
                 });
 
         ItemGroupEvents.modifyEntriesEvent(YODAS_PATH_ORES_GROUP_KEY)
@@ -124,6 +126,7 @@ public class ModItemGroups {
                     entries.add(ModBlocks.MOISTURE_VAPORATOR);
                     entries.add(ModBlocks.TATOOINE_CRATE);
                     entries.add(ModBlocks.DRY_TATOOINE_BUSH);
+                    entries.add(ModBlocks.SCRAP_PILE);
                 });
 
 

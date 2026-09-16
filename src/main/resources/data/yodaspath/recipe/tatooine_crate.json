@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "SIS",
-    "ICI",
-    "SIS"
+    "SMS",
+    "MCM",
+    "SMS"
   ],
   "key": {
     "S": {
       "item": "yodaspath:tatooine_sandstone"
     },
-    "I": {
-      "item": "minecraft:iron_ingot"
+    "M": {
+      "item": "yodaspath:scrap_metal"
     },
     "C": {
       "item": "minecraft:chest"

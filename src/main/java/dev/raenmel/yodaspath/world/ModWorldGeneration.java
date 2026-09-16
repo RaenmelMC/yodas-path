@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.PlacedFeature;
 
@@ -29,10 +30,28 @@ public class ModWorldGeneration {
                     )
             );
 
+    public static final RegistryKey<PlacedFeature> SCRAP_PILE_PLACED =
+            RegistryKey.of(
+                    RegistryKeys.PLACED_FEATURE,
+                    Identifier.of(
+                            YodaSPath.MOD_ID,
+                            "scrap_pile"
+                    )
+            );
+
+    public static final RegistryKey<PlacedFeature> DRY_TATOOINE_BUSH_PLACED =
+            RegistryKey.of(
+                    RegistryKeys.PLACED_FEATURE,
+                    Identifier.of(
+                            YodaSPath.MOD_ID,
+                            "dry_tatooine_bush"
+                    )
+            );
+
     public static void initialize() {
 
         YodaSPath.LOGGER.info(
-                "Registering Kyber ore world generation"
+                "Registering Yoda's Path world generation"
         );
 
         BiomeModifications.addFeature(
@@ -46,5 +65,22 @@ public class ModWorldGeneration {
                 GenerationStep.Feature.UNDERGROUND_ORES,
                 DEEPSLATE_KYBER_ORE_PLACED
         );
+
+        BiomeModifications.addFeature(
+                BiomeSelectors.includeByKey(
+                        BiomeKeys.DESERT
+                ),
+                GenerationStep.Feature.VEGETAL_DECORATION,
+                SCRAP_PILE_PLACED
+        );
+
+        BiomeModifications.addFeature(
+                BiomeSelectors.includeByKey(
+                        BiomeKeys.DESERT
+                ),
+                GenerationStep.Feature.VEGETAL_DECORATION,
+                DRY_TATOOINE_BUSH_PLACED
+        );
+
     }
 }

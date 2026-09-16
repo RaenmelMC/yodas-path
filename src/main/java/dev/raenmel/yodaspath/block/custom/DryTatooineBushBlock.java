@@ -3,6 +3,7 @@ package dev.raenmel.yodaspath.block.custom;
 import com.mojang.serialization.MapCodec;
 import dev.raenmel.yodaspath.block.ModBlocks;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.PlantBlock;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
@@ -48,6 +49,7 @@ public class DryTatooineBushBlock extends PlantBlock {
             BlockView world,
             BlockPos pos
     ) {
-        return floor.isOf(ModBlocks.TATOOINE_SAND);
+        return floor.isOf(ModBlocks.TATOOINE_SAND)
+                || floor.isOf(Blocks.SAND);
     }
 }

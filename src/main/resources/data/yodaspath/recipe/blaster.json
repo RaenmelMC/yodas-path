@@ -2,16 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "pattern": [
-    "IRI",
-    "ICI",
-    "IRI"
+    "SSS",
+    " CS",
+    " S "
   ],
   "key": {
-    "I": {
-      "item": "minecraft:iron_ingot"
-    },
-    "R": {
-      "item": "minecraft:redstone"
+    "S": {
+      "item": "yodaspath:scrap_metal"
     },
     "C": {
       "item": "yodaspath:blaster_cell"
