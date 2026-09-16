@@ -1,6 +1,7 @@
 package dev.raenmel.yodaspath.block;
 
 import dev.raenmel.yodaspath.YodaSPath;
+import dev.raenmel.yodaspath.block.custom.MoistureVaporatorBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -101,6 +102,16 @@ public class ModBlocks {
                     "tatooine_sandstone_wall",
                     new WallBlock(
                             AbstractBlock.Settings.copy(Blocks.SANDSTONE_WALL)
+                    )
+            );
+
+    public static final Block MOISTURE_VAPORATOR =
+            registerBlock(
+                    "moisture_vaporator",
+                    new MoistureVaporatorBlock(
+                            AbstractBlock.Settings.copy(Blocks.IRON_BLOCK)
+                                    .strength(3.0F)
+                                    .nonOpaque()
                     )
             );
 

@@ -1,9 +1,11 @@
 package dev.raenmel.yodaspath;
 
 import dev.raenmel.yodaspath.block.ModBlocks;
+import dev.raenmel.yodaspath.block.entity.ModBlockEntities;
 import dev.raenmel.yodaspath.command.ModCommands;
 import dev.raenmel.yodaspath.component.ModDataComponents;
 import dev.raenmel.yodaspath.entity.ModEntities;
+import dev.raenmel.yodaspath.event.ModBlockEvents;
 import dev.raenmel.yodaspath.event.ModPlayerEvents;
 import dev.raenmel.yodaspath.item.ModItemGroups;
 import dev.raenmel.yodaspath.item.ModItems;
@@ -35,5 +37,7 @@ public class YodaSPath implements ModInitializer {
 		ModWorldGeneration.initialize();
 		ModItemGroups.initialize();
 		ModEntities.initialize();
+		ModBlockEntities.initialize();
+		ModBlockEvents.initialize();
 	}
 }

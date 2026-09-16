@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ICI",
+    "IXI",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_block"
+    },
+    "C": {
+      "item": "minecraft:cactus"
+    },
+    "X": {
+      "item": "minecraft:cauldron"
+    }
+  },
+  "result": {
+    "id": "yodaspath:moisture_vaporator",
+    "count": 1
+  }
+}
