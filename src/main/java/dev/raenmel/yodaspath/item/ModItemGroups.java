@@ -123,6 +123,7 @@ public class ModItemGroups {
                     entries.add(ModBlocks.TATOOINE_SANDSTONE_WALL);
                     entries.add(ModBlocks.MOISTURE_VAPORATOR);
                     entries.add(ModBlocks.TATOOINE_CRATE);
+                    entries.add(ModBlocks.DRY_TATOOINE_BUSH);
                 });
 
 

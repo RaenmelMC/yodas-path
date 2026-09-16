@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "yodaspath:block/dry_tatooine_bush"
+  }
+}

@@ -1,6 +1,7 @@
 package dev.raenmel.yodaspath.block;
 
 import dev.raenmel.yodaspath.YodaSPath;
+import dev.raenmel.yodaspath.block.custom.DryTatooineBushBlock;
 import dev.raenmel.yodaspath.block.custom.MoistureVaporatorBlock;
 import dev.raenmel.yodaspath.block.custom.TatooineCrateBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -123,6 +124,16 @@ public class ModBlocks {
                             AbstractBlock.Settings.copy(Blocks.BARREL)
                                     .strength(2.5F)
                                     .nonOpaque()
+                    )
+            );
+
+    public static final Block DRY_TATOOINE_BUSH =
+            registerBlock(
+                    "dry_tatooine_bush",
+                    new DryTatooineBushBlock(
+                            AbstractBlock.Settings.copy(Blocks.DEAD_BUSH)
+                                    .noCollision()
+                                    .breakInstantly()
                     )
             );
 

@@ -1,6 +1,7 @@
 package dev.raenmel.yodaspath.client;
 
 import dev.raenmel.yodaspath.YodaSPath;
+import dev.raenmel.yodaspath.block.ModBlocks;
 import dev.raenmel.yodaspath.client.model.EmissiveLightSaberModel;
 import dev.raenmel.yodaspath.component.ModDataComponents;
 import dev.raenmel.yodaspath.entity.ModEntities;
@@ -11,6 +12,7 @@ import dev.raenmel.yodaspath.network.DeflectPayload;
 
 import dev.raenmel.yodaspath.screen.ModScreenHandlers;
 import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.model.loading.v1.ModelLoadingPlugin;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
@@ -19,6 +21,7 @@ import net.fabricmc.fabric.api.event.client.player.ClientPreAttackCallback;
 import dev.raenmel.yodaspath.client.screen.TatooineCrateScreen;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
+import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.client.render.model.BakedModel;
 import net.minecraft.client.util.ModelIdentifier;
@@ -36,6 +39,11 @@ public class YodaSPathClient implements ClientModInitializer {
         EntityRendererRegistry.register(
                 ModEntities.BLASTER_BOLT,
                 FlyingItemEntityRenderer::new
+        );
+
+        BlockRenderLayerMap.INSTANCE.putBlock(
+                ModBlocks.DRY_TATOOINE_BUSH,
+                RenderLayer.getCutout()
         );
 
         HandledScreens.register(
