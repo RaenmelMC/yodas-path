@@ -1,9 +1,14 @@
 # Yoda&#39;s Path
 
-## Setup
+## What is Yoda's Path
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+🌌 A Star Wars-inspired Minecraft mod adding new planets, creatures, weapons, materials, and technology. ⚔️🚀
+
+# Who i am
+
+Hey, I'm Raenmel! 👋
+Minecraft mod developer who loves creating new content, experimenting with ideas, and bringing new adventures to the game. 🧱⚙️
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+This template is available under the MIT license.
